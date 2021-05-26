@@ -1,0 +1,43 @@
+@model Producto
+<h1>Editar Producto</h1>
+
+<form action="" method="post">
+    <input type="hidden" asp-for="Id" />
+    
+    <div class="form-grgoup">
+        <label asp-for="NombreProducto">Nombre Producto</label>
+        <input asp-for="NombreProducto"  class="form-control">
+    </div>
+
+    <div class="form-grgoup">
+        <label asp-for="Foto">Foto</label>
+        <input asp-for="Foto"  class="form-control">
+    </div>
+    <div class="form-grgoup">
+        <label asp-for="Descripcion">Descripcion</label>
+        <input asp-for="Descripcion"  class="form-control">
+    </div>
+    <div class="form-grgoup">
+        <label asp-for="Precio">Precio</label>
+        <input asp-for="Precio"  class="form-control">
+    </div>
+    <div class="form-grgoup">
+        <label asp-for="Celular">Celular</label>
+        <input asp-for="Celular"  class="form-control">
+    </div>
+    <div class="form-grgoup">
+        <label asp-for="LugarCompra">Lugar Compra</label>
+        <input asp-for="LugarCompra"  class="form-control">
+    </div>
+    <div class="form-grgoup">
+        <label asp-for="NombreComprador">Nombre Comprador</label>
+        <input asp-for="NombreComprador"  class="form-control">
+    </div>
+
+    <div class="form-grgoup">
+        <label asp-for="Categoria"></label>
+        <select asp-for="CategoriaID" asp-items="ViewBag.Categoria" type="text" class="form-control"></select>
+    </div>
+
+    <button class="btn btn-primary">Editar</button>
+</form>
